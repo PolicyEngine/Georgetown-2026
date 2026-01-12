@@ -2,43 +2,52 @@ import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
-import SlideContent from '@/components/SlideContent';
+import Image from 'next/image';
+import { assetPath } from '@/lib/assetPath';
 
 export default function ACADemoSlide() {
   return (
     <Slide>
-      <div className="max-w-7xl">
+      <div className="w-full">
         <SlideHeader>
-          <SlideTitle>Demo: Affordable Care Act modeling</SlideTitle>
+          <SlideTitle>ACA Premium Tax Credits by Income</SlideTitle>
         </SlideHeader>
 
-        <SlideContent size="lg">
-          <div className="space-y-6 text-left">
-            <p className="font-semibold text-pe-dark">
-              PolicyEngine models ACA premium tax credits and subsidies
-            </p>
-
-            <ul className="list-disc list-inside space-y-4 ml-6">
-              <li>Calculate premium tax credit eligibility and amounts</li>
-              <li>Model impacts of income changes on subsidies</li>
-              <li>Analyze subsidy cliffs and phase-outs</li>
-              <li>Compare enhanced vs. pre-ARPA subsidies</li>
-            </ul>
-
-            <div className="pt-4">
-              <p className="font-semibold text-pe-teal mb-2">Key features:</p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Second-lowest cost Silver plan benchmarks by state</li>
-                <li>Income-based contribution percentages</li>
-                <li>Medicaid expansion interactions</li>
-              </ul>
+        <div className="grid grid-cols-2 gap-8 mt-4">
+          {/* Example 1: Texas Couple */}
+          <div className="space-y-2">
+            <div className="text-sm text-gray-600">
+              <span className="font-semibold text-pe-dark">Example 1:</span> 25 & 28 year old married couple in Austin, Texas
             </div>
-
-            <p className="text-pe-teal font-semibold pt-4">
-              policyengine.org →
-            </p>
+            <div className="relative w-full h-[320px] bg-white rounded-lg overflow-hidden">
+              <Image
+                src={assetPath("/images/aca/texas-couple-ptc.png")}
+                alt="Texas household ACA benefits by income"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
-        </SlideContent>
+
+          {/* Example 2: NY Family */}
+          <div className="space-y-2">
+            <div className="text-sm text-gray-600">
+              <span className="font-semibold text-pe-dark">Example 2:</span> Family of 3 in New York (two 40yo parents, one 3yo child)
+            </div>
+            <div className="relative w-full h-[320px] bg-white rounded-lg overflow-hidden">
+              <Image
+                src={assetPath("/images/aca/ny-family-healthcare.png")}
+                alt="New York family healthcare benefits by income"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p className="text-center text-sm text-gray-500 mt-4">
+          Showing Medicaid, CHIP, and Premium Tax Credit eligibility based on household income
+        </p>
       </div>
     </Slide>
   );
