@@ -9,13 +9,13 @@ export default function PolicyReformDemoSlide() {
     <Slide>
       <div className="max-w-7xl">
         <SlideHeader>
-          <SlideTitle>Demo: American Worker Rebate Act</SlideTitle>
+          <SlideTitle>Demo: Doubling SNAP earned income deduction</SlideTitle>
         </SlideHeader>
 
         <SlideContent size="lg">
           <div className="space-y-6 text-left">
             <p className="font-semibold text-pe-dark">
-              Modeling the American Worker Rebate Act using PolicyEngine
+              Modeling a reform that doubles the SNAP earned income deduction
             </p>
 
             <div className="space-y-4 ml-6">
