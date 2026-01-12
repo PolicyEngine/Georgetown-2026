@@ -17,6 +17,7 @@ import PolicyReformDemoSlide from './slides/PolicyReformDemoSlide';
 import ACADemoSlide from './slides/ACADemoSlide';
 import ACADemoSlide2 from './slides/ACADemoSlide2';
 import LiveCodingRevealSlide from './slides/LiveCodingRevealSlide';
+import QuestionsSlide from './slides/QuestionsSlide';
 import EndSlide from './slides/EndSlide';
 
 export const georgetown2026Config: SlideshowConfig = {
@@ -59,6 +60,7 @@ export const georgetown2026Config: SlideshowConfig = {
     LiveCodingRevealSlide,
 
     // Wrap up
+    QuestionsSlide,
     EndSlide,
   ],
 };
