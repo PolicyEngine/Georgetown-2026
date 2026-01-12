@@ -26,7 +26,6 @@ export default function UsersSlide() {
     { name: 'Amplifi', logo: '/logos/organizations/amplifi.png' },
     { name: 'Mirza', logo: '/logos/organizations/mirza.png' },
     { name: 'Center for Growth and Opportunity', logo: '/logos/organizations/cgo.jpg' },
-    { name: 'UN Digital Public Goods Alliance', logo: '/logos/organizations/dpga-official.png', isUN: true },
   ];
 
   return (
@@ -36,22 +35,17 @@ export default function UsersSlide() {
       </SlideHeader>
 
       <div className="w-full mt-4">
-        <div className="grid grid-cols-5 gap-x-6 gap-y-8 w-full px-8">
+        <div className="grid grid-cols-6 gap-x-6 gap-y-8 w-full px-8">
           {organizations.map((org, idx) => (
             <div
               key={idx}
-              className={`
-                flex items-center justify-center
-                ${org.isUN ? 'col-span-5' : ''}
-              `}
-              style={{
-                height: org.isUN ? '70px' : '70px'
-              }}
+              className="flex items-center justify-center"
+              style={{ height: '70px' }}
             >
               <Image
                 src={assetPath(org.logo)}
                 alt={org.name}
-                width={org.isUN ? 200 : (org as any).smaller ? 80 : 120}
+                width={(org as any).smaller ? 80 : 120}
                 height={70}
                 className="object-contain"
               />
