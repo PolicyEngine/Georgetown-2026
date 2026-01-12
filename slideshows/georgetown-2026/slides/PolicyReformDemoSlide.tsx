@@ -9,7 +9,10 @@ export default function PolicyReformDemoSlide() {
     <Slide>
       <div className="max-w-7xl">
         <SlideHeader>
-          <SlideTitle>Demo: Doubling SNAP earned income deduction</SlideTitle>
+          <div className="flex items-center gap-4">
+            <span className="slide-tag">Demo 3</span>
+            <SlideTitle>Economy-wide reform analysis</SlideTitle>
+          </div>
         </SlideHeader>
 
         <SlideContent size="lg">

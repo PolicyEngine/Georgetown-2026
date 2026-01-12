@@ -9,7 +9,7 @@ export default function IntroSlide() {
     <Slide>
       <div className="max-w-7xl">
         <SlideHeader>
-          <SlideTitle>What We'll Cover</SlideTitle>
+          <SlideTitle>What we'll cover</SlideTitle>
         </SlideHeader>
 
         <SlideContent size="lg">

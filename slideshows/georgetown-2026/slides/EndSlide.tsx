@@ -6,7 +6,7 @@ export default function EndSlide() {
   return (
     <Slide isEnd showFooter={false}>
       <div className="flex flex-col items-center justify-center space-y-10">
-        <SlideTitle isEnd>Get Involved</SlideTitle>
+        <SlideTitle isEnd>Get involved</SlideTitle>
         <div className="text-xl text-white space-y-8 text-center max-w-4xl">
           <p className="text-2xl font-medium text-white/90">
             PolicyEngine is free and open source - we welcome you to use it

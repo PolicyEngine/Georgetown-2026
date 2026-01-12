@@ -8,7 +8,7 @@ export default function OurApproachSlide() {
     <Slide>
       <div className="">
         <SlideHeader>
-          <SlideTitle>Our Approach to Each Ingredient</SlideTitle>
+          <SlideTitle>Our approach to each ingredient</SlideTitle>
         </SlideHeader>
 
         <div className="mt-8 px-8">

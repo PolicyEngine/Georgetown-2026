@@ -10,15 +10,14 @@ export default function LiveCodingIntroSlide() {
       <div className="max-w-7xl">
         <SlideHeader>
           <div className="flex items-center gap-4">
-            <span className="slide-tag">Live Demo</span>
-            <SlideTitle>AI Builds a Policy Visualizer</SlideTitle>
+            <span className="slide-tag">Live demo</span>
+            <SlideTitle>Let's kick off an AI coding task</SlideTitle>
           </div>
         </SlideHeader>
 
         <SlideContent size="md">
           <p className="text-gray-600 mb-8">
-            Let's kick off an AI coding exercise while we talk. This prompt will build a
-            custom visualization tool using PolicyEngine:
+            While we talk, Claude will build something for the class using PolicyEngine...
           </p>
 
           <div className="code-block">
@@ -28,15 +27,15 @@ export default function LiveCodingIntroSlide() {
               <div className="code-block-dot bg-[#28c840]" />
               <span className="ml-4 text-gray-500 text-sm font-mono">claude-code</span>
             </div>
-            <div className="code-block-content space-y-4">
-              <p className="text-[#7ee787]">Build a Python script that charts the federal Child Tax Credit vs earnings using policyengine_us.</p>
-              <p className="text-gray-300">Show lines for 1, 2, and 3 children. Save the chart as an image.</p>
+            <div className="code-block-content">
+              <p className="text-[#7ee787]">I'm giving a talk at Laura Blessing's inequality class at Georgetown right now. Let's build a React app using the policyengine-us Python package showing some topic from the syllabus...</p>
+              <span className="inline-block w-2 h-5 bg-white animate-pulse ml-1" />
             </div>
           </div>
 
           <div className="accent-block mt-8">
             <p className="text-pe-dark font-medium text-xl">
-              We'll check back on the results at the end of the presentation
+              We'll check back later to see what it built
             </p>
           </div>
         </SlideContent>

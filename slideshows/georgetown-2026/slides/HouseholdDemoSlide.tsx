@@ -9,7 +9,10 @@ export default function HouseholdDemoSlide() {
     <Slide>
       <div className="max-w-7xl">
         <SlideHeader>
-          <SlideTitle>Demo: DC household</SlideTitle>
+          <div className="flex items-center gap-4">
+            <span className="slide-tag">Demo 2</span>
+            <SlideTitle>DC household</SlideTitle>
+          </div>
         </SlideHeader>
 
         <SlideContent size="lg">
