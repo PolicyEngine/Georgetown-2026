@@ -8,7 +8,7 @@ export default function HowDoesItWorkSlide() {
     <Slide>
       <div className="">
         <SlideHeader>
-          <SlideTitle>How does it work?</SlideTitle>
+          <SlideTitle>How Does It Work?</SlideTitle>
         </SlideHeader>
 
         <div className="flex flex-col items-center justify-center mt-16 space-y-12">

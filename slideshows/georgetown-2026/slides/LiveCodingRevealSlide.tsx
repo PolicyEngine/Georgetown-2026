@@ -9,7 +9,7 @@ export default function LiveCodingRevealSlide() {
     <Slide>
       <div className="max-w-7xl">
         <SlideHeader>
-          <SlideTitle>Let's see what Claude built!</SlideTitle>
+          <SlideTitle>Let's See What Claude Built!</SlideTitle>
         </SlideHeader>
 
         <SlideContent size="lg">

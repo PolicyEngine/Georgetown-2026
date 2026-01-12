@@ -11,7 +11,7 @@ export default function LiveCodingIntroSlide() {
         <SlideHeader>
           <div className="flex items-center gap-4">
             <span className="slide-tag">Live Demo</span>
-            <SlideTitle>AI builds a policy visualizer</SlideTitle>
+            <SlideTitle>AI Builds a Policy Visualizer</SlideTitle>
           </div>
         </SlideHeader>
 
